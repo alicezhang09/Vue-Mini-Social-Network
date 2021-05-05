@@ -4,9 +4,10 @@
   "description": "A mini-social-network created with VueJS!!",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "dev": "webpack -d --watch",
-    "build": "webpack -p --watch"
+    "start": "nodemon ./public/app.js",
+    "serve": "nodemon --watch public/ ./public/app.js",
+    "dev": "webpack.config -d --watch",
+    "build": "webpack.config -p --watch"
   },
   "repository": {
     "type": "git",
@@ -58,6 +59,7 @@
     "eslint-plugin-vue": "^3.12.0",
     "vue": "^2.5.13",
     "vue-loader": "^14.1.1",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.13",
+    "vue/cli-service": "~4.5.0"
   }
 }
