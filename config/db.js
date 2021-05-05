@@ -11,6 +11,9 @@ const
  * @returns {<Promise>} Promise
  */
 const query = (q, data) => {
+  console.log('hello')
+  console.log(q)
+  console.log(data)
   return new Promise((resolve, reject) => {
     db.query(q, data, (err, res) => {
       err ? reject(err) : resolve(res)
@@ -38,6 +41,7 @@ const comparePassword = (password, hash) => {
 }
 
 const getId = username => {
+  console.log('hello2')
   return new Promise((resolve, reject) => {
     query('SELECT id FROM users WHERE username=? LIMIT 1', [username])
       .then(s => resolve(s[0].id))
