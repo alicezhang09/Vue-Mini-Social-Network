@@ -24,6 +24,7 @@ export default {
   ],
   computed: {
     feeds(){
+      console.log(this.p.feeds)
       return this.p.feeds
     }
   }

@@ -5,6 +5,7 @@
       <router-link to='/' :exact='true' active-class='ha_active' >Home</router-link>
       <router-link to='/explore' active-class='ha_active' >Explore</router-link>
       <router-link to='/deactivate' active-class='ha_active' >Deactivate</router-link>
+      <router-link to='/about' active-class='ha_active' >About</router-link>
     </div>
     <div class='right'>
       <router-link :to='{ name: "edit-profile" }' active-class='ha_active' >Edit Profile</router-link>
